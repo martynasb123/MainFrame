@@ -35,6 +35,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Martynas/Desktop/MainFrame&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Martynas\Desktop\MainFrame" />
+    </key>
+  </component>
   <component name="RunManager" selected="TestNG.C:/Users/Martynas/Desktop/MainFrame/testng.xml">
     <configuration name="MainFrame" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
