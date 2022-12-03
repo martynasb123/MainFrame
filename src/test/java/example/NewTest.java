@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import java.io.File;
 
 public class NewTest {
 
@@ -21,7 +22,7 @@ public class NewTest {
 
 	@BeforeTest
 	public void beforeTest() {
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ File.separator+"chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 
