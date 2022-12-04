@@ -14,7 +14,16 @@ public class NewTest {
 	private WebDriver driver;
 
 	@Test
-	public void testEasy() {
+	public void testEasy1() {
+		driver.get("http://demo.guru99.com/test/guru99home/");
+		String title = driver.getTitle();
+		System.out.println(title + " VEIKIA");
+		Assert.assertTrue(title.contains("Demo Guru99 Page"));
+	}
+
+
+	@Test
+	public void testEasy2() {
 		driver.get("http://demo.guru99.com/test/guru99home/");
 		String title = driver.getTitle();
 		System.out.println(title + " VEIKIA");
@@ -23,7 +32,7 @@ public class NewTest {
 
 	@BeforeTest
 	public void beforeTest() {
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ File.separator+"chromedriver");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ File.separator+"chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("start-maximized"); // open Browser in maximized mode
 		options.addArguments("disable-infobars"); // disabling infobars
